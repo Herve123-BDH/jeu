@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <h1> jeu crée par Hervé</h1>
+    </nav>
+    <div class="oklm">
+        <button>Pierre</button>
+        <button>Feuille</button>
+        <button>Ciseaux</button>
+        <!--<button></button>-->  
+    </div>
+    <div class="resultat"></div>
+    <footer>>
+        <fieldset><legend>A propos</legend>
+        <ul class="menu">
+            <li class="item">
+                Contact:<a href="tel:+2330266560271"> +2330266560271</a>
+            </li>
+            <li class="item">
+                Mail: <a href="mailto:Didyherve@gmail.com">Didyherve@gmail.com</a>
+            </li>
+        </ul>
+        </fieldset>
+    </footer>
+    <script>
+        const buttons = document.querySelectorAll("button");
+        
+        for (let i = 0; i < buttons.length; i++){
+            buttons[i].addEventListener("click", function(){
+                const jouer = buttons[i].innerHTML;
+                const robot = buttons[Math.floor(Math.random() * buttons.length)].innerHTML;
+                console.log(`jouer: ${jouer} VS Robot: ${robot}`);
+                let resutat = "";
+                if (jouer === robot){
+                    resutat = "Egalité";
+                }
+                else if ((jouer==="Pierre" && robot==="Ciseaux") || (jouer==="Feuille" && robot==="Pierre") || (jouer==="Ciseaux" && robot==="Feuille")){
+                    resutat = "Gagné"
+                }
+                else {
+                    resutat = "Perdu"
+                }
+                document.querySelector(".resultat").innerHTML = `
+                ${name} : ${jouer} </br>
+                Robot : ${robot} </br>
+                Resultat: ${resutat}
+                `;
+            })
+        }
+        let name = prompt(`
+        Bienvenue dans le jeu pierre feuille ciseaux
+        Entrer votre nom pour commencer le jeu`)
+
+    </script>
+    
+    
+</body>
+</html>

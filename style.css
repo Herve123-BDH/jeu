@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #335f58;
+}
+nav{
+    line-height: 20px;
+    width: fit-content;
+    height: 50px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid wheat;
+    border-radius: 15px;
+    padding: 5px;
+}
+h1{
+    font-size: 1.3rem;
+    height: fit-content;
+    color: antiquewhite;
+}  
+button{
+    width: fit-content;
+    margin: 0 auto;
+    background-color: rgb(56, 56, 56);
+    font-size: 20px;
+    color: white;
+    position: relative;
+    top: 50px;
+}  
+.oklm{display: flex;
+    width: 20%;
+    margin: 0 auto;
+}
+.resultat{
+    border:  2px black solid;
+    width: fit-content;
+    margin: 0 auto;
+    position: relative;
+    top: 80px;
+    padding: 20px;
+    line-height: 120%;
+    font-size: 30px;
+    color: white;
+    font-family: Georgia;
+    background-image: linear-gradient(to right, rgb(48, 48, 223), rgb(219, 53, 53));
+
+}
+footer{
+    position: absolute;
+    bottom: 0;
+    line-height: 40px;
+    color: black;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+fieldset{
+    padding: 10px;
+    border: 5px solid white;
+}
+legend{
+    font-size: 1.5rem;
+}
+@media screen and (max-width:960px) {
+    nav{
+        width: fit-content;
+        height: 50px;
+        margin: 5% auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid wheat;
+        border-radius: 15px;
+        padding: 5px;
+    }
+    h1{
+        font-size: 1.3rem;
+        height: fit-content;
+        color: antiquewhite;
+    }  
+    button{
+        width: fit-content;
+        margin: 0 auto;
+        background-color: rgb(56, 56, 56);
+        font-size: 20px;
+        color: white;
+    }  
+    .oklm{display: flex;
+        width: 80%;
+        margin: 0 auto;
+    }
+    .resultat{
+        border:  2px black solid;
+        border-radius: 30px;
+        width: 280px;
+        padding: 20px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        line-height: 120%;
+        font-size: 30px;
+        color: white;
+        font-family: Georgia;
+        background-image: linear-gradient(to right, rgb(48, 48, 223), rgb(219, 53, 53));
+
+    }
+    footer{
+        position: absolute;
+        bottom: 0;
+        line-height: 40px;
+        color: black;
+    }
+    li{
+        list-style: none;
+    }
+    a{
+        text-decoration: none;
+        color: white;
+    }
+    fieldset{
+        padding: 10px;
+        border: 5px solid white;
+    }
+    legend{
+        font-size: 1.5rem;
+    }
+}
